@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BirdFinder</title>
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Open+Sans" rel="stylesheet">
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    
+    <script src="https://use.fontawesome.com/c13b2bdcfc.js"></script>
+</head>
+<body>
+
+    <div class="searchOverlay">
+    	<h1 class="title">BirdFinder</h1>
+    	<form autocomplete="off" id="searchForm">
+    		<input type="text" id="searchField" placeholder="Find your city">
+            <button id="submitButton" type="submit">Submit</button>
+            <button id="autolocate"><i class="fa fa-dot-circle-o" aria-hidden="true"></i></button>
+    	</form>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="wrapper">
+
+        <h1 class="resultTitle"></h1>
+        
+        <div class="petsDisplay"></div>
+    </div>
+    <!-- END WRAPPER -->
+
+    <div class="petDisplayContainer">
+    <!-- Pet Carousel -->
+        <div id="petGallery" class="petGallery"></div>
+        <div class="petInfo">
+                <div class="petName smallTitle "></div>
+                <div class="petGender smallTitle "></div>
+                <div class="petAge smallTitle "></div>
+                <div class="petDescription description"></div>
+                <div class="petAdress"></div>
+        </div>
+    </div>
+    <div class="backToMap">
+        <button class="toMap">Search Another Location</button>
+    </div>
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIE6FNON09T5VbnCh_HfoADsz1prORR68"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+
+</body>
+</html>
